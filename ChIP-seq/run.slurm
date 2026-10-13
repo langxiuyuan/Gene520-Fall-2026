@@ -9,8 +9,7 @@
 
 module load Perl
 module load SAMtools
-module load BEDTools
-module load MACS3
+module load BEDTools/2.31.1-GCC-14.3.0
 module load Python/3.10.4-GCCcore-11.3.0
 
 
