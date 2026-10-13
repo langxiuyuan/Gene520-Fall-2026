@@ -33,6 +33,7 @@ for file in `ls *.sorted.bam`;do
     /mnt/vstor/courses/gene520/ChIP-seq/software/wigToBigWig $name.wig.300bp $chrom_size $name.bw #convert wig file to bigwig file
 done
 
+module load MACS3/3.0.3-gfbf-2024a
 macs3 callpeak -t $name.sorted.bam -n $name
 
 echo Done
