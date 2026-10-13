@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --job-name=chipseq
-#SBATCH --time=1:00:00 # 1 hour of "wall time"
+#SBATCH --time=4:00:00 # 4 hour of "wall time"
 #SBATCH -N 1 # 1 Node
 #SBATCH -c 4 # 4 processor
 #SBATCH --mem=16gb
