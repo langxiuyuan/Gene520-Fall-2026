@@ -25,6 +25,7 @@ for file in `ls *.sorted.bam`;do
     name=${file/.sorted.bam/}
     #
     echo -ne $name has `samtools view $file | wc -l` mapped reads.\\n >>summary.reads_count
+    module load BEDTools/2.31.1-GCC-14.3.0
     bedtools bamtobed -i $file | awk '{OFS="\t";print $1,$2,$3,".","1"}' | $lib/sorted_bed_merge_redundant_lines_V2.pl > $name.monoclonal.bed # remove PCR duplication
     wait
     echo -ne $name has `wc -l $name.monoclonal.bed` monoclonal reads >>summary.reads_count
