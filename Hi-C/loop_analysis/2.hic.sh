@@ -7,7 +7,7 @@ trans=./processed_frag/frag_loop.human_Beta_cells.trans # frag.trans
 expt=human_Beta_cells
 
 lib=./src
-ref=/mnt/pan/courses/gene520/Hi-C/ref/Arima_ref
+ref=/mnt/vstor/courses/gene520/Hi-C/ref/Arima_ref
 anchorbed=$ref/${genome}_arima_anchors_avg.bed # anchor_5kb_bed
 blacklist=$ref/${genome}_5kb_anchors_blacklist # 5kb blacklist
 frag_2_anchor=/mnt/vstor/courses/gene520/Hi-C/ref/hg19_GATC_GANTC/frag.2.anchor
