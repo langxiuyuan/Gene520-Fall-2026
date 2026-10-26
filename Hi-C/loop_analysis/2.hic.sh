@@ -24,5 +24,6 @@ wait
 cat ${expt}.merged.raw.cis.trans | python3 $lib/to_pre_python3.py $anchorbed | sort -k2,2d -k6,6d > ${expt}.merged.raw.pre
 wait
 
+module load Java/11.0.27
 java -jar /mnt/vstor/courses/gene520/Hi-C/software/juicer/CPU/common/juicer_tools.1.9.9_jcuda.0.8.jar pre ${expt}.merged.raw.pre ${expt}.hic hg19
 
