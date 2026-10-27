@@ -11,7 +11,7 @@ module load Perl
 module load SAMtools
 module load BEDTools
 module load Python/3.10.4-GCCcore-11.3.0
-module load R/4.5.2-gfbf-2025b
+module load R-bundle-CRAN/2025.11-foss-2025b
 
 
 bash ./1.hg19_run.compart_200k.sh
