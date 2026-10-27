@@ -30,9 +30,9 @@ mkdir ${celltype}_${res}
 
 
 if [[ $res == 1M ]]; then
-	$lib/1.frag.to.bin.merge.from.loop_V2.pl $binref ${celltype}_end_loop.cis.rmbl |python2  $lib/remove.blacklist.py $ref/blacklist/hg19.anchors.${res}.blacklist > ${celltype}_$res/$name.sparse.matrix.${res}.rmbl
+	$lib/1.frag.to.bin.merge.from.loop_V2.pl $binref ${celltype}_end_loop.cis.rmbl |python  $lib/remove.blacklist.py $ref/blacklist/hg19.anchors.${res}.blacklist > ${celltype}_$res/$name.sparse.matrix.${res}.rmbl
 else 
-	$lib/1.frag.to.bin.merge.from.loop_V2.pl $binref ${celltype}_end_loop.cis.rmbl |python2  $lib/remove.blacklist.py $ref/blacklist/hg19.anchors.${res}b.blacklist > ${celltype}_$res/$name.sparse.matrix.${res}.rmbl 
+	$lib/1.frag.to.bin.merge.from.loop_V2.pl $binref ${celltype}_end_loop.cis.rmbl |python  $lib/remove.blacklist.py $ref/blacklist/hg19.anchors.${res}b.blacklist > ${celltype}_$res/$name.sparse.matrix.${res}.rmbl 
 fi
 
 
