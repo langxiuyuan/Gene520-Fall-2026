@@ -7,11 +7,11 @@
 #SBATCH --partition=markov_gpu
 #SBATCH --mail-user=xxl1432@case.edu
 
-module load Perl/5.30.0-GCCcore-8.3.0
-module load SAMtools/1.11-GCC-10.2.0
-module load BEDTools/2.30.0-GCC-11.2.0
-module load Python/3.8.6-GCCcore-10.2.0
-module load R/4.4.2-gfbf-2024a
+module load Perl
+module load SAMtools
+module load BEDTools
+module load Python/3.10.4-GCCcore-11.3.0
+module load R/4.5.2-gfbf-2025b
 
 
 bash ./1.hg19_run.compart_200k.sh
